@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/logo_pollo" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Rey del Pollo</title>
+</head>
+<body>
+    <header class="bg-orange-600 text-white p-2">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <img id="logo" class="w-14 h-16" src="assets/img/logo_pollo" alt="logo">
+                <a href="#" class="text-2xl font-bold">Rey del Pollo</a>
+            </div>
+            
+            <nav class="list-none font-bold  hidden p-1 gap-1 bg-orange-400 border border-gray-300 rounded-md shadow-md transition duration-100 md:flex md:relative md:border-none md:bg-inherit">
+                
+                <li ><a href="home.html" class="mr-4 hover:scale-105 duration-150 ">Home</a></li>
+                <li><a href="menu.html" class="mr-4 hover:scale-105 duration-150">Menu</a></li>
+                <li><a href="#" class="mr-4 hover:scale-105 duration-150">Sobre Nosotros</a></li>
+                <li><a id="inicioUsuario" href="iniciarSesion.html" class="mr-4 hover:scale-105 duration-150">Iniciar Sesion</a></li>
+                <li><a id="registroSalir" href="registro.html" class="mr-4 hover:scale-105 duration-150">Registro de Ususario</a></li>
+                <ul id="ux" class=" flex justify-between gap-2 items-center">
+
+                </ul>
+            </nav>
+            <button class="md:hidden "><img id="menu" class="" src="assets/img/menu.svg" alt=""></button>
+        </div>
+    </header>
+
+
+    <main class="m-0">
+        <div class=" text-white absolute w-full h-full flex  flex-col gap-2 items-center mt-28 ">
+            <h1 class="text-4xl font-bold md:text-6xl">Bienvenido al Rey del Pollo</h1>
+            <p class="md:text-4xl">Donde el pollo frito se convierte en el rey de tu paladar</p>
+            <button class=" md:text-3xl font-bold z-10 px-2 py-1 bg-orange-400 hover:scale-105 duration-100 rounded "><a href="menu.html">Observa Nuestro Menu</a></button>
+        </div>
+        <video class="w-full h-full" autoplay loop muted src="assets/video/SPOT PUBLICITARIO - ALITAS BBQ (online-video-cutter.com) (1).mp4">
+            
+        </video>
+    </main>
+
+    <template id="templateSesion" class="">
+        <li id="user"></li>
+        <button class="rounded border p-1 hover:scale-105" id="salir">Salir</button>
+    </template>
+
+
+
+<script type="module" src="home.js"></script></body>
+
+</html>
